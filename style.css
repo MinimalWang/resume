@@ -146,6 +146,9 @@ svg {
 }
 
 @media (max-width: 768px) {
+  .layout {
+    margin: 0 auto;
+  }
   header {
     padding-top: 50px;
     padding-bottom: 60px;
@@ -164,6 +167,9 @@ svg {
   }
   aside .pdf {
     width: 40%;
+  }
+  section[id = contact] {
+    border-bottom: 2px solid #ccc;
   }
 }
 
