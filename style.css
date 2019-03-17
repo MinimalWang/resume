@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font: 14px/1.5 Arial;
+  color: #666;
+  background-color: #efefef;
+}
+
+.layout {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  width: 100%;
+  background-color: #5c5a5d;
+  text-align: center;
+  padding: 40px 0 10px 0;
+}
+
+header > h1 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+header > p {
+  font-size: 18px;
+  color: #ddd;
+  margin: 0;
+}
+
+aside {
+  width: 240px;
+  background-color: #fff;
+  position: relative;
+  padding: 90px 10px 20px 20px;
+  border-right: 2px solid #ccc;
+}
+
+aside .avatar {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: -90px;
+  left: 0;
+}
+
+aside .avatar img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+aside > p {
+  text-align: center;
+}
+
+section {
+  border-bottom: 2px solid #ccc;
+  margin: 30px 20px 0 20px;
+  padding-bottom: 20px;
+}
+
+section h2 {
+  color: #5c99ca;
+  font-size: 16px;
+}
+
+.personal .item span:first-child {
+  width: 80px;
+  display: inline-block;
+}
+
+.personal .item span:last-child::before {
+  content: '：';
+  margin-left: 10px;
+}
+
+.skills .item {
+  display: flex;
+  align-items: center;
+}
+
+.skills .keyword {
+  width: 80px;
+}
+
+.skills .rule {
+  flex: 1;
+  height: 4px;
+  background-color: #ccc;
+}
+
+.skills .rule i {
+  display: block;
+  height: 100%;
+  background-color: #5c5a5d;
+}
+
+.contact .item {
+  display: flex;
+  align-items: center;
+}
+
+.contact .item span {
+  margin-left: 10px;
+}
+
+.contact svg {
+  width: 18px;
+  height: 18px;
+}
+
+main {
+  min-height: calc(100vh - 100px);
+  background-color: #fff;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  aside {
+    width: 100%;
+    border-right: none;
+  }
+}
